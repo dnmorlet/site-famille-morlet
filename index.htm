@@ -1,0 +1,213 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<title>Page d'accueil de "Site de la Famille MORLET"</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" Content="site personnel">
+<meta Name="keywords" Content="peinture tableaux recherche généalogie sport  athlétisme Raymond morlet jeux">
+<style type="text/css">
+<!--
+a:hover {
+	font-family: "Times New Roman", Times, serif;
+	color: #FF6600;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1997, 2000 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997, 2000 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(1);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 6;
+    document.MM_Time[0][0] = new String("behavior");
+    document.MM_Time[0][0].frame = 41;
+    document.MM_Time[0][0].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0].lastFrame = 41;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+
+   <SCRIPT LANGUAGE="JavaScript">
+var mes="Fonction désactivée !";
+function click(e) {
+if (document.all) {
+if (event.button == 2) {
+alert(mes);
+return false;
+}
+}
+if (document.layers) {
+if (e.which == 3) {
+alert(mes);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+</script>
+
+</head>
+
+<body bgcolor="#ABFDEE" background="fond.gif" text="#400040" link="#0000FF" vlink="#008000" alink="#FF0080" onLoad="MM_timelinePlay('Timeline1');MM_preloadImages('nini.jpg','Champion.jpg')">
+<h1> <NOBR> 
+  <DIV ALIGN="left"> 
+    <p> <font size=+3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site personnel&nbsp; 
+      <img src="2025.03.16.JPG" name="Image1" width=80 height=100 border=0 id="Image1">&nbsp;... 
+      <img src="Famille1.jpg" name="Image1" width=100 height=100 border=0 id="Image1">&nbsp;... 
+      et familial&nbsp;&nbsp; &nbsp;&nbsp;! &nbsp;&nbsp;<font size=+3><font size=-1> 
+      </font><font size=+3><font size=+3><font size=-1> </font></font></font></font>&nbsp;&nbsp;<font size=-1> 
+      </font> <font size=-1>(mis à jour le 
+      <!-- #BeginDate format:It1 -->22-11-2026<!-- #EndDate -->
+      )</font></font><font size=+3><font size=+2><NOBR></NOBR></font></font><NOBR></NOBR><font size=+2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> </DIV> 
+  </DIV>
+</h1>
+<hr>
+<NOBR> <b> <BR>
+<font size=+2> &nbsp;&nbsp;&nbsp; BIENVENUE sur ce site où l'on trouvera : </font> 
+</b> 
+<p><b><font size=+1>&nbsp;&nbsp;&nbsp; . Des <a href="Tableaux.html">tableaux 
+  à contempler</a>&nbsp; C'est <a href="Nini.jpg" onMouseOver="MM_swapImage('Image1','','nini.jpg',1)" onMouseOut="MM_swapImgRestore()">NICOLE</a>, 
+  mon épouse, qui peint ... mais aussi&nbsp;&nbsp;<a href="tableauxC.html">?</a></font></b><font size="+1"><strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;. De <b><font size=+1><a href="TableauxCA.html">magnifiques 
+  POUPEES</a> r&eacute;alis&eacute;es par Micheline &amp; Mich&egrave;le ALIBERT 
+  !</font></b></strong></font><br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp; . Des&nbsp;&nbsp; <a href="Recherche.html">Avis&nbsp; 
+  de&nbsp; Re cherche</a>&nbsp; ! </font></b> <br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dans l'espoir de 
+  retrouver des camarades de Jeux et quelques "anciens" de ma vie de Militaire 
+  ! </font></b> <br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp; . Des liens sur des sites ayant un centre 
+  d'intérêt pour moi ... particulièrement sur : </font></b> <br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - L' <a href="http://www.athle.org/">Athlétisme</a> 
+  et le Sport en général </font></b> <br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  Je rends hommage en passant, à <a href="Morlet.html" onMouseOver="MM_swapImage('Image1','','Champion.jpg',1)" onMouseOut="MM_swapImgRestore()">Raymond 
+  MORLET</a>(mon Père), </font></b> <br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  qui fut en son temps parmi les plus grands de la course à pied ! </font></b> 
+  <b><font size=+1>... et BRAVO &agrave; toute cette famille de sportifs ... quelques 
+  photos !<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - L' <a href="http://www.cieletespace.fr/">Astronomie</a> 
+  (<i>et non pas l'Astrologie</i>) ! </font></b> <br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b><b><font size=+1> 
+  &nbsp;- Les <a href="Cousins.html"> cousines et cousins</a> d&eacute;couverts 
+  sur l'Internet !</font></b><br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b> <NOBR> </NOBR>
+</NOBR><NOBR> 
+<p align="left"><b><font size=+1>&nbsp;&nbsp;&nbsp; . Une adresse à laquelle vous 
+  pouvez me contacter ... </font></b> <br>
+  <b><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>COURRIER<font size=+1> 
+  auquel </font>JE REPONDRAI <font size=+1>au plus vite !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b> 
+ <font size=+3><font size=+2><a href="mailto:danielmorlet@orange.fr"><img src="EMAIL2.gif" border=0 height=60 width=55></a></font></font>&nbsp;<br>
+
+<p>
+<hr> 
+</body>
+</html>
